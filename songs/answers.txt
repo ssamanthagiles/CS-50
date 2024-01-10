@@ -1,0 +1,12 @@
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?/
+
+I would look at the data in the songs database, then organize dive deeper at the type of genre most songs is, than look at the most frequent
+artist and see what kind of genre that artist falls under and also look at the attribute tempo in order to find a person's audio aura.
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener.
+What better ways of calculating this aura would you propose?
+
+Getting user input itself might be a better way to calculate the audio aura because the user could be listening to a specific type of music
+(i.e sad music simply becasue they're feeling depressed at the moment), but that may not be their music of choice (which is also why the
+data may not be entirely representative). Also another why to make the data more representative is doing it over a longer period of time, to
+see how a user's preferences in songs has developed from the start. 
