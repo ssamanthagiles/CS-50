@@ -1,0 +1,28 @@
+sort1 uses: Bubble sort
+
+How do you know?: Bubble sort has Ω(n) running time, in contrast to selection sort's running time of Ω(n^2). I first found the fastest sorting time while using
+random10000.txt to affirm that sort 2 was merge sort (since it had the fastest running time). After that, I narrowed my options down to sort 1 or sort 3 for
+bubble sort. Since bubble sort has a running time of Ω(n), in an ideal case (if the numbers are already sorted), bubble sort can sort numbers
+easily by realizing that there are no swaps neccessesary, so in linear time, it will declare the numbers are already sorted without needing to make multiple
+passes again and again. So in order to test which one was the fastest, I ran both sort 1 and sort 3 in a random, but much bigger file than 10,000 in order to see
+which one was the fastset. I ran time ./sort1 random50000.txt and got a running time of 3.4 seconds, while running time ./sort3 random10000.txt, I got 6.897
+seconds as a running time. From those two running times alone, I found that sort 1 was the quickest of the two, therefore affirming that sort 1 was bubble sort.
+
+sort2 uses: Merge sort
+
+How do you know?: Sort 2 was the fastest out of the other sorts. When I ran time ./sort1 random10000.txt, it took 0.505 seconds to compile, while running
+time ./sort2 random10000.txt, it took 0.038 seconds to compile, and after running time ./sort3 random10000.txt, it took 0.566 seconds to compile. We learned
+in class that selection sort and bubble sort take about O(n^2) steps to complete sorting algorithm, while merge sort takes O(n log n) steps. Through these
+differences in time it takes to compile, it is shown that merge sort is the fastest sorter. And while testing random10000.txt, I found that sort 2 took
+the least amount of time; therefore affirming that sort 2 is merge sort.
+
+sort3 uses: Selection sort
+
+How do you know?: Selection sort has a running time of Ω(n^2) and bubble sort has a running time of Ω(n). I first found the fastest sorting time while using
+random10000.txt to affirm that sort 2 was merge sort (since it had the fastest running time). After that, I narrowed my options down to sort 1 or sort 3 for
+selection sort. Since bubble sort has a running time of Ω(n), in an ideal case (if the numbers are already sorted), bubble sort can sort numbers
+easily by realizing that there are no swaps neccessesary, so in linear time, it will declare the numbers are already sorted without needing to make multiple
+passes again and again. From this prior knowledge, I knew that seletion sort was the slowest (more specifically out of bubble sort and selection sort, selection
+sort would be slwower). So in order to test which one was the slowest, I ran both sort 1 and sort 3 in a random, but much bigger file than 10,000 in order to see
+which one was the fastset. I ran time ./sort1 random50000.txt and got a running time of 3.4 seconds, while running time ./sort3 random10000.txt, I got 6.897
+seconds as a running time. From those two running times alone, I found that sort 1 was the quickest of the two, therefore affirming that sort 3 was selection sort.
